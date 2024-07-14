@@ -10,7 +10,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-zinc-600">
+    <main className="flex min-h-screen flex-col items-center bg-gradient-to-r from-cyan-500 to-blue-500">
       <div className="flex flex-col min-w-full bg-zinc-800 md:px-80 px-8">
         <div className="flex flex-row justify-between">
           <Image
