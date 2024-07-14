@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { EmblaOptionsType } from 'embla-carousel'
 import EmblaCarousel from './ui/EmblaCarousel'
+import ParticlesBG from "./ui/ParticlesBG";
 
 const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDE_COUNT = 5
@@ -26,19 +27,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="md:flex md:flex-row md:flex-wrap md:justify-between min-w-full md:px-80 px-8 py-10">
-        <div className="content-center">
-          <h1 className="text-4xl font-bold text-center">Elevating your social presence!</h1>
+      <div className="min-w-full relative">
+        <div className="min-w-full min-h-full absolute">
+            <ParticlesBG />
         </div>
-        <div className="flex justify-center">
-          <Image
-                src="/websitelogo.png"
-                alt="Logo"
-                className=""
-                width={400}
-                height={400}
-                priority
-          />
+        <div className="md:flex md:flex-row md:flex-wrap md:justify-between min-w-full md:px-80 px-8 py-4">
+          <div className="content-center">
+            <h1 className="text-4xl font-bold text-center">Elevating your social presence!</h1>
+          </div>
+          <div className="flex justify-center">
+            <Image
+                  src="/websitelogo.png"
+                  alt="Logo"
+                  className=""
+                  width={400}
+                  height={400}
+                  priority
+            />
+          </div>
         </div>
       </div>
       <div className="min-w-full bg-zinc-800 flex flex-col justify-center">
