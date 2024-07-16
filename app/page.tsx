@@ -32,7 +32,6 @@ export default function Home() {
         </div>
       </div>
       <div className="min-w-full bg-zinc-800 flex flex-col justify-center py-10 min-[1610px]:px-80 px-8">
-        
         <div className="pb-4">
           <EmblaCarousel slides={CLIENTS} options={OPTIONS} />
         </div>
