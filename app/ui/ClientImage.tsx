@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 export type Client = {
+    index: number
     image: string
     name: string
     channelType: string

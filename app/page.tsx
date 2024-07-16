@@ -11,14 +11,15 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 let CLIENTS: Array<Client> = [
   {
+    index: 1,
     image: "/notho.png",
     name: "notho",
     channelType: "gamer",
     subs: 100,
     views: 100
   },
-
   {
+    index: 2,
     image: "/notho.png",
     name: "notho",
     channelType: "test",

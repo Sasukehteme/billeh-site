@@ -44,7 +44,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((client: Client) => (
-            <div className="min-[1610px]:flex-carousel flex-mobile pl-4 min-w-0">
+            <div className="min-[1610px]:flex-carousel flex-mobile pl-4 min-w-0" key={client.index}>
               <div className="embla__slide__number">
                 <ClientImage image={client.image} name={client.name} channelType={client.channelType} subs={client.subs} views={client.views}/>
               </div>
