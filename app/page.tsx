@@ -2,64 +2,11 @@ import Image from "next/image";
 import { EmblaOptionsType } from 'embla-carousel'
 import EmblaCarousel from './ui/EmblaCarousel'
 import ParticlesBG from "./ui/ParticlesBG";
-import AOSComponent from "./ui/AOSComponent";
-import {Client} from "./ui/ClientImage"
 import Contact from "./ui/Contact";
+import Link from "next/link";
+import { CLIENTS } from "./data/clients"
 
 const OPTIONS: EmblaOptionsType = { loop: true }
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
-
-let CLIENTS: Array<Client> = [
-  {
-    index: 1,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "gamer",
-    subs: 100,
-    views: 100
-  },
-  {
-    index: 2,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "test",
-    subs: 100,
-    views: 100
-  },
-  {
-    index: 3,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "gamer",
-    subs: 100,
-    views: 100
-  },
-  {
-    index: 4,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "test",
-    subs: 100,
-    views: 100
-  },
-  {
-    index: 5,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "gamer",
-    subs: 100,
-    views: 100
-  },
-  {
-    index: 6,
-    image: "/notho.png",
-    name: "notho",
-    channelType: "test",
-    subs: 100,
-    views: 100
-  }
-]
 
 export default function Home() {
   return (
@@ -90,10 +37,10 @@ export default function Home() {
           <EmblaCarousel slides={CLIENTS} options={OPTIONS} />
         </div>
         <div className="min-w-full flex flex-row justify-center">
-          <button className="bg-cyan-500 rounded-md border-2 border-cyan-500 hover:bg-opacity-0 transition ease-in-out px-10 py-3 font-semibold text-lg">View All Creators</button>
+          <Link href="/creators" className="bg-cyan-500 rounded-md border-2 border-cyan-500 hover:bg-opacity-0 transition ease-in-out px-10 py-3 font-semibold text-lg">View All Creators</Link>
         </div>
       </div>
-      <div className="min-w-full bg-gradient-to-r from-cyan-500 to-blue-500 min-[1610px]:px-80 py-24">
+      <div className="min-w-full bg-gradient-to-r from-cyan-500 to-blue-500 min-[1610px]:px-80 px-8 py-24">
         <Contact/>
       </div>
     </main>

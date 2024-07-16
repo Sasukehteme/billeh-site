@@ -8,10 +8,8 @@ import {
   usePrevNextButtons
 } from './EmblaCarouselArrowButtons'
 import useEmblaCarousel from 'embla-carousel-react'
-import Image from "next/image";
 import ClientImage from './ClientImage'
-import { Client } from './ClientImage'
-import { channel } from 'diagnostics_channel'
+import { Client } from '../data/clients'
 
 type PropType = {
   slides: Client[]

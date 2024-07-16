@@ -9,7 +9,7 @@ export default function Contact() {
                 <h1 className="text-center text-4xl font-bold pb-8">Want to know more?</h1>
                 <h2 className="text-center text-2xl font-semibold pb-4">Reach out below!</h2>
                 <div className="min-w-full flex flex-row justify-center">
-                    <Link href={"mailto:jackwirata@gmail.com"} className="text-center bg-cyan-500 rounded-md border-2 border-cyan-500 hover:bg-opacity-0 transition ease-in-out px-14 py-3 font-semibold text-lg">Contact Us</Link>
+                    <Link href={"mailto:contact@high-management.com"} className="text-center bg-cyan-500 rounded-md border-2 border-cyan-500 hover:bg-opacity-0 transition ease-in-out px-14 py-3 font-semibold text-lg">Contact Us</Link>
                 </div>
             </div>
         </AOSComponent>

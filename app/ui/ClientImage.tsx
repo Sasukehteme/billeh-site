@@ -1,20 +1,21 @@
 import Image from "next/image"
-
-export type Client = {
-    index: number
-    image: string
-    name: string
-    channelType: string
-    subs: number
-    views: number
-}
+import { Client } from "../data/clients";
 
 const ClientImage: React.FC<Client> = (props) => {
     const { image, name, channelType, subs, views } = props
 
     return(
-        <div className="group relative rounded-lg">
-            
+        <div className="relative group rounded-lg">
+            <div className="">
+                <Image
+                    src={image}
+                    alt="Logo"
+                    className="rounded-lg"
+                    width={300}
+                    height={300}
+                    priority
+                />
+            </div>
             <div className="transition-all ease-in-out duration-500 bg-black/30 opacity-0 absolute min-w-full max-w-full max-h-0 rounded-lg -bottom-20 group-hover:-translate-y-20 group-hover:opacity-100 group-hover:max-h-full backdrop-blur-sm p-4">
                 <h1 className="text-xl text-bold ">{name}</h1>
                 <h1 className="text-sm font-light pb-4">{channelType}</h1>
@@ -42,14 +43,6 @@ const ClientImage: React.FC<Client> = (props) => {
                 </div>
 
             </div>
-            <Image
-                src={image}
-                alt="Logo"
-                className="rounded-lg"
-                width={300}
-                height={300}
-                priority
-            />
         </div>
     );
 }
