@@ -10,9 +10,11 @@ import {
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from "next/image";
 import ClientImage from './ClientImage'
+import { Client } from './ClientImage'
+import { channel } from 'diagnostics_channel'
 
 type PropType = {
-  slides: number[]
+  slides: Client[]
   options?: EmblaOptionsType
 }
 
@@ -29,22 +31,25 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
 
   return (
     <section className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((index) => (
-            <div className="md:flex-carousel flex-mobile pl-4 min-w-0" key={index}>
-              <div className="embla__slide__number">
-                <ClientImage />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="embla__controls">
+      <div className="embla__controls relative">
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        </div>
+        <div className="absolute min-w-full">
+          <h1 className="text-4xl font-bold text-center">Our Creators</h1>
+        </div>
+      </div>
+
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {slides.map((client: Client) => (
+            <div className="min-[1610px]:flex-carousel flex-mobile pl-4 min-w-0">
+              <div className="embla__slide__number">
+                <ClientImage image={client.image} name={client.name} channelType={client.channelType} subs={client.subs} views={client.views}/>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

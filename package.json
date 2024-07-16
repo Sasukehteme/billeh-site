@@ -13,6 +13,7 @@
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
+    "aos": "^2.3.4",
     "embla-carousel": "^8.1.6",
     "embla-carousel-react": "^8.1.6",
     "next": "^14.2.5",
@@ -21,6 +22,7 @@
     "react-tsparticles": "^2.12.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
