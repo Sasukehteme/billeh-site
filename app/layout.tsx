@@ -20,14 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <body className="text-white dark:text-white">
+      <body className={inter.className + ' dark:text-white text-white'}>
           <Header />
           {children}
           <SpeedInsights />
           <Analytics />
           <Footer />
-        </body>
       </body>
     </html>
   );
