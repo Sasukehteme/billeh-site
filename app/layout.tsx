@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <body className="text-white">
+        <body className="text-white dark:text-white">
           <Header />
           {children}
           <SpeedInsights />
