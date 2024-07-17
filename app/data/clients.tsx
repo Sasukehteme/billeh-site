@@ -11,48 +11,48 @@ let CLIENTS: Array<Client> = [
     {
       index: 1,
       image: "/notho.png",
-      name: "notho",
-      channelType: "gamer",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     },
     {
       index: 2,
       image: "/notho.png",
-      name: "notho",
-      channelType: "test",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     },
     {
       index: 3,
       image: "/notho.png",
-      name: "notho",
-      channelType: "gamer",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     },
     {
       index: 4,
       image: "/notho.png",
-      name: "notho",
-      channelType: "test",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     },
     {
       index: 5,
       image: "/notho.png",
-      name: "notho",
-      channelType: "gamer",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     },
     {
       index: 6,
       image: "/notho.png",
-      name: "notho",
-      channelType: "test",
+      name: "Notho",
+      channelType: "Gamer",
       subs: 100,
       views: 100
     }
