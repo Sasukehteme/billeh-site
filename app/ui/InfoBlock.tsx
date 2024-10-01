@@ -6,13 +6,13 @@ let INFOSNIPPETS: Array<InfoSnippetType> = [
         index: 1,
         image: "/dollar.png",
         title: "Sponsorships",
-        description: "At High Management, we elevate your brand with tailored sponsorship opportunities that maximize visibility and impact."
+        description: "Connecting you with brands that perfectly align with your audience and goals."
     },
     {
         index: 2,
         image: "/user.svg",
         title: "Client-Led Solutions",
-        description: "Clients make the decisions, and we provide the support to help them achieve their goals."
+        description: "You make the decisions, and we provide the support to help you achieve your goals."
     },
     {
         index: 3,
@@ -31,12 +31,14 @@ let INFOSNIPPETS: Array<InfoSnippetType> = [
 export default function InfoBlock() {
     return (
         <>
-            <div className="flex flex-row">
-                {INFOSNIPPETS.map((info: InfoSnippetType) => (
-                    <div key={info.index} className="p-2 basis-1/4">
-                        <InfoSnippet index={info.index} image={info.image} title={info.title} description={info.description}/>
-                    </div>
-                ))}    
+            <div className="flex min-w-full">
+                <div className="flex flex-row flex-wrap justify-center">
+                    {INFOSNIPPETS.map((info: InfoSnippetType) => (
+                        <div key={info.index} className="p-2 basis-1/4">
+                            <InfoSnippet index={info.index} image={info.image} title={info.title} description={info.description}/>
+                        </div>
+                    ))}    
+                </div>    
             </div>
         </>
     )

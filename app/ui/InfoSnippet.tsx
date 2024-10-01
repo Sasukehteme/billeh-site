@@ -10,7 +10,7 @@ export default function InfoSnippet(props: InfoSnippetType) {
     const {index, image, title, description} = props
 
     return(
-        <div className="text-balance">
+        <div className="text-balance min-w-[265px]">
             <Image
                   src={image}
                   alt="Logo"

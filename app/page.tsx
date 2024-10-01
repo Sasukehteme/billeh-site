@@ -6,6 +6,8 @@ import Contact from "./ui/Contact";
 import Link from "next/link";
 import { CLIENTS } from "./data/clients"
 import InfoBlock from "./ui/InfoBlock";
+import Divider from "./ui/Divider";
+import LargeInfoBoxWithImage from "./ui/LargeInfoBoxWithImage";
 
 const OPTIONS: EmblaOptionsType = { loop: true }
 
@@ -18,8 +20,8 @@ export default function Home() {
         </div>
         <div className="min-[1610px]:flex min-[1610px]:flex-row min-[1610px]:flex-wrap min-[1610px]:justify-between min-w-full min-[1610px]:px-80 px-8 py-4">
           <div className="content-center">
-            <h1 className="text-5xl font-bold text-left">HIGH MANAGEMENT</h1>
-            <h1 className="text-3xl font-light text-left">Elevating your social presence!</h1>
+            <h1 className="text-5xl min-[1610px]:pt-0 pt-20 font-bold min-[1610px]:text-left text-center">HIGH MANAGEMENT</h1>
+            <h1 className="text-3xl font-light min-[1610px]:text-left text-center">Elevating your social presence!</h1>
           </div>
           <div className="flex justify-center">
             <Image
@@ -33,8 +35,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="min-w-full bg-zinc-800 flex flex-col justify-center py-10 min-[1610px]:px-80 px-8">
+      <div className="min-w-full bg-zinc-800 flex flex-col justify-center py-20 min-[1610px]:px-80 px-8">
         <InfoBlock/>
+        <Divider/>
+        <LargeInfoBoxWithImage />
       </div>
       <div className="min-w-full bg-gradient-to-r from-cyan-500 to-blue-500 min-[1610px]:px-80 px-8 py-24">
         <Contact/>
