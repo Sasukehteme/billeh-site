@@ -17,10 +17,10 @@ export default function LargeInfoBoxWithImage() {
                 </div>
                 <div className="" data-aos="fade-left">
                     <Image
-                        src="/placeholder16x9.png"
+                        src="/message.svg"
                         alt="Logo"
                         className=""
-                        width={500}
+                        width={300}
                         height={200}
                         priority
                     />
