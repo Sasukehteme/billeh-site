@@ -6,7 +6,7 @@ export default function Header() {
         <div className="flex flex-col min-w-full bg-zinc-800 min-[1000px]:px-80 px-8">
           <div className="flex flex-row justify-between">
             <Image
-                src="/websitelogo.png"
+                src="/logo.png"
                 alt="Logo"
                 className=""
                 width={100}
