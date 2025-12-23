@@ -16,7 +16,7 @@ export default function Footer() {
               />
             </Link>
             <div className="flex flex-row flex-wrap content-center">
-              <h1>©2024 All rights reserved</h1>
+              <h1>©2025 All rights reserved</h1>
             </div>
           </div>
         </div>
